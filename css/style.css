@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* Variáveis */
+
+:root {
+    --dark-color: #363636;
+}
+
 * {
     box-sizing: border-box;
     outline: none;
@@ -42,7 +49,7 @@ p {
 body {
     background-color: #fae1af;
     background-attachment: fixed;
-    background-image: url('../img/Messi.jpg');
+    background-image: url('../img/bg01.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,7 +114,7 @@ body {
 
 /* Menu principal */
 #wrap>nav {
-    background-color: #202020;
+    background-color: var(--dark-color);
 }
 
 .nav {
@@ -115,8 +122,8 @@ body {
     align-items: center;
     text-transform: uppercase;
     justify-content: end;
-    border-top: 1px solid #202020;
-    border-bottom: 1px solid #202020;
+    border-top: 1px solid var(--dark-color);
+    border-bottom: 1px solid var(--dark-color);
 }
 
 .nav a {
@@ -127,7 +134,7 @@ body {
 
 .nav a:hover {
     background-color: #ffc964;
-    color: #202020;
+    color: var(--dark-color);
 }
 
 .nav a:first-child {
@@ -135,7 +142,7 @@ body {
 }
 
 /* Conteúdo principal (section, article e aside) */
-#wrap > main {
+#wrap>main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -146,6 +153,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    width: 100%;
 }
 
 .main>section {
@@ -154,14 +162,14 @@ body {
 }
 
 .main>aside {
-    background-color: rgba(255, 243, 221, 0.9);
+    background-color: rgba(255, 243, 221, 0.6);
     padding: 0 1rem;
     border-top: 3px dotted orange;
-}
+    }
 
 /* Rodapé */
 #wrap>footer {
-    background-color: #202020;
+    background-color: var(--dark-color);
     color: #ffffff;
 }
 
@@ -177,12 +185,12 @@ body {
     color: #ffc964;
     padding: .25rem;
     transition: .25s;
-    border-top: 1px solid #202020;
+    border-top: 1px solid var(--dark-color);
 }
 
 .footer-top a:hover {
     background-color: #ffc964;
-    color: #202020;
+    color: var(--dark-color);
 }
 
 .footer-botton {
@@ -194,7 +202,7 @@ body {
     margin-top: 0;
     line-height: 1.6;
     list-style: none;
-    padding-left: 1rem;
+    padding-left: .5rem;
 }
 
 .footer-botton a {
@@ -205,6 +213,18 @@ body {
     color: orangered;
 }
 
+/* Classes de uso geral */
+.center {
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.small {
+    font-size: .75rem;
+}
 
 /* Larguras de telas MD+ */
 @media screen and (min-width: 768px) {
@@ -218,5 +238,6 @@ body {
         border-left: 3px dotted orange;
         min-width: 220px;
         max-width: 220px;
+        flex: 0 0 220px;
     }
 }

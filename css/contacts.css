@@ -1,0 +1,60 @@
+/* css\contacts.css */
+
+/* Folhas de estilo de contacts.html */
+
+.contacts form {
+    display: block;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contacts label {
+    display: block;
+    padding: 0.25rem 0 .5rem .25rem;
+}
+
+.contacts input,
+.contacts textarea,
+.contacts button {
+    font-family: inherit;
+    font-size: inherit;
+    padding: .5rem .5rem;
+    border: none;
+}
+
+.contacts input,
+.contacts textarea {
+    width: 100%;
+    border: 1px solid red;
+    border-bottom: 3px solid red;
+    border-radius: .4rem;
+    background-color: rgb(254, 221, 221);
+}
+
+.contacts textarea {
+    height: 6rem;
+    min-height: 2.5rem;
+    resize: vertical;
+    width: 100%;
+}
+
+.contacts input:valid,
+.contacts textarea:valid {
+    background-color: rgb(226, 255, 226);
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+}
+
+.contacts button {
+    pointer-events: none;
+    background-color: grey;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+}
+
+.contacts form:valid button {
+    pointer-events: all;
+    background-color: steelblue;
+    cursor: pointer;
+}

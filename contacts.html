@@ -17,10 +17,10 @@
 
         <header>
             <div class="header limit">
-                <a href="index.html"><img src="img/Messi.jpg" alt="Logotipo de Cappuccino"></a>
+                <a href="index.html"><img src="img/Messi.jpg" alt="Logotipo do GOAT"></a>
                 <h1>Messi</h1>
 
-                <!-- Formulário de epsquisa no site -->
+                <!-- Formulário de pesquisa no site -->
                 <form action="https://www.google.com/search" target="_blank" method="get">
                     <input type="search" name="q" placeholder="Procurar...">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass fa-fw"></i></button>
@@ -31,24 +31,55 @@
         <nav>
             <div class="nav limit">
                 <a href="index.html">Início</a>
-                <a href="sig-in.html">Cadastre-se</a>
                 <a href="contacts.html">Contatos</a>
                 <a href="about.html">Sobre</a>
             </div>
         </nav>
 
         <main>
-            <div class="main limit">
+            <div class="main limit contacts">
 
                 <section>
-                    <h2>Lionel Andrés Messi Cuccittini</h2>
-                    <p>O maior jogador de todos os tempos</p>
-                    <p>Dribla todo mundo, meu ídolo, o maior argentino de todos os tempos. Ele é brabo.</p>
+
+                    <h2>Faça Contato</h2>
+                    <p>Preencha todos os campos do formulário abaixo para entrar em contato com a equipe do site.</p>
+                    <p class="center red small">Todos os campos obrigatórios</p>
+
+                    <form action="#" method="get">
+
+                        <p>
+                            <label for="contactName">Seu nome:</label>
+                            <input type="text" name="contact_name" id="contactName" required minlength="2" maxlength="255" placeholder="Preencha seu nome social" value="">
+                        </p>
+
+                        <p>
+                            <label for="contactEmail">Seu e-mail:</label>
+                            <input type="email" name="contact_email" id="contactEmail" required placeholder="Seu e-mail principal">
+                        </p>
+
+                        <p>
+                            <label for="contactSubject">Assunto do contato:</label>
+                            <input type="text" name="contact_subject" id="contactSubject" required minlength="3" maxlength="255" placeholder="Digite o assunto do seu contato">
+                        </p>
+
+                        <p>
+                            <label for="contactMessage">Mensagem:</label>
+                            <textarea name="contact_message" id="contactMessage" required minlength="4" maxlength="2048" placeholder="Escreva o quanto quiser"></textarea>
+                        </p>
+
+                        <p>
+                            <button type="submit">Enviar</button>
+                            <span class="red small">&larr; Clique somente uma vez.</span>
+                        </p>
+                       
+                    </form>
+                    &nbsp;
+                    
                 </section>
 
                 <aside>
-                    <h3>Sobre ele</h3>
-                    <p>O maior vencedor em títulos da história do futebol, maior vencedor da Ballon D'or(com 8), 1 copa do mundo(podendo levantar a segunda em 2026), maior vencedor da chuteira de ouro(com 6), maior assitente da história do futebol e o maior ídolo do clube Barcelona.
+                    <h3>Mais coisas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde eius assumenda accusantium.
                     </p>
                 </aside>
 
@@ -82,6 +113,7 @@
                         <li><a href="contacts.html"><i class="fa-solid fa-comments fa-fw"></i> Contatos</a></li>
                         <li><a href="about.html"><i class="fa-solid fa-circle-info fa-fw"></i> Sobre</a></li>
                         <li><a href="privacy.html"><i class="fa-solid fa-user-lock fa-fw"></i> Sua privacidade</a></li>
+                    </ul>
                 </div>
 
             </div>
